@@ -9,12 +9,15 @@
 import Foundation
 import UIKit
 
+public let WE_SCREEN_WIDTH :Int = Int(UIScreen.main.bounds.size.width)
+public let WE_SCREEN_HEIGHT :Int = Int(UIScreen.main.bounds.size.height)
+
 struct NavigationParam {
-    var ONAV_BAR_BOTTOMLINE_HEIGHT = 2.0
-    var ODOT_COORDINATE = 0.0
-    var ONAVIGATION_BAR_HEIGHT = 44
-    var ONAV_TAB_BAR_HEIGHT = 40
-    var OSTATUS_BAR_HEIGHT = 20
+    static let ONAV_BAR_BOTTOMLINE_HEIGHT : CGFloat = 2.0
+    static let ODOT_COORDINATE : CGFloat = 0.0
+    static let ONAVIGATION_BAR_HEIGHT : CGFloat = 44
+    static let ONAV_TAB_BAR_HEIGHT : CGFloat = 40
+    static let OSTATUS_BAR_HEIGHT : CGFloat = 20
 }
 
 struct DefaultSetting {
@@ -22,7 +25,7 @@ struct DefaultSetting {
 //        return UIColor.init(colorLiteralRed: r, green: g, blue: b, alpha: a)
 //    }
     
-    var NavTabbarColor = UIColor.init(colorLiteralRed: 240, green: 230, blue: 230, alpha: 1)
-    var DefaultRedColor = UIColor.init(colorLiteralRed: 226, green: 58, blue: 58, alpha: 1)
+    static let NavTabbarColor = UIColor.init(colorLiteralRed: 240.0/255.0, green: 230.0/255.0, blue: 230.0/255.0, alpha: 1)
+    static let DefaultRedColor = UIColor.init(colorLiteralRed: 226.0/255.0, green: 58.0/255.0, blue: 58.0/255.0, alpha: 1)
     
 }
